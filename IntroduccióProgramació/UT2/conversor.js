@@ -4,11 +4,11 @@ const kb = 1024;
 const mb = (kb * 1024);
 const gb = (mb * 1024);
 
-console.log(======================================================)
-console.log(================ CONVERSOR D'UNITATS ================)
-console.log(======================================================)
+console.log("======================================================")
+console.log("================ CONVERSOR D'UNITATS ================")
+console.log("======================================================")
 console.log()
-console.log(========== Converteix Bytes a -> KB, MB, GB ==========)
+console.log("========== Converteix Bytes a -> KB, MB, GB ==========")
 let byte = Number(prompt("Mida amb bytes: "));
 let kilo = (`${byte / kb}`);
 let mega = (`${byte / mb}`);
@@ -17,6 +17,9 @@ console.log(`${byte} bytes són:`);
 console.log(`  - ${kilo} KB`);
 console.log(`  - ${mega} MB`);
 console.log(`  - ${giga} GB`);
+
 console.log()
-console.log(========== Converteix GB a bytes ==========)
-let byte = Number(prompt("Mida amb bytes: "));
+console.log("========== Converteix GB a bytes ==========")
+let gigabit = Number(prompt("Mida amb GB: "));
+let part3 = (`${gigabit * gb}`);
+console.log(`${gigabit} GB són ${part3} bytes`);
