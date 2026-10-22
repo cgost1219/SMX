@@ -23,3 +23,11 @@ console.log("========== Converteix GB a bytes ==========")
 let gigabit = Number(prompt("Mida amb GB: "));
 let part3 = (`${gigabit * gb}`);
 console.log(`${gigabit} GB són ${part3} bytes`);
+
+console.log()
+console.log("========== Calculem el Temps de descàrrega ==========")
+let mida = Number(prompt("Mida del fitxer a descarregar amb GB: "));
+let velocitat = Number(prompt("velocitat de la connexió (Mbps): "));
+let segons = (`${(mida*100000) / velocitat}`);
+let minuts = (`${mida * (velocitat * 60)}`);
+console.log(`El temps de descàrrega és: ${segons} segons o ${minuts} minuts`);
