@@ -28,6 +28,7 @@ console.log()
 console.log("========== Calculem el Temps de descàrrega ==========")
 let mida = Number(prompt("Mida del fitxer a descarregar amb GB: "));
 let velocitat = Number(prompt("velocitat de la connexió (Mbps): "));
-let segons = (`${(mida*100000) / velocitat}`);
-let minuts = (`${mida * (velocitat * 60)}`);
+let midamb = Number(`${mida * 8000}`)
+let segons = Number(`${midamb / velocitat}`)
+let minuts = Number(`${segons / 60}`)
 console.log(`El temps de descàrrega és: ${segons} segons o ${minuts} minuts`);
