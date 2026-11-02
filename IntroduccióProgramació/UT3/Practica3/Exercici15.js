@@ -1,14 +1,14 @@
-let num1 = number(prompt("Escriu un nombre: "));
+let num1 = Number(prompt("Escriu un nombre: "));
 let sim = prompt("Quina operació vols fer? ");
-let num2 = number(prompt("Escriu un altre nombre: "));
-if (sim = "+") {
+let num2 = Number(prompt("Escriu un altre nombre: "));
+if (sim == "+") {
   resultat = num1 + num2;
-} else if (sim = "-") {
+} else if (sim == "-") {
   resultat = num1 - num2;
-} else if (sim = "*") {
+} else if (sim == "*") {
   resultat = num1 * num2;
-} else if (sim = "/" ) {
-  if (num2 = 0) {
+} else if (sim == "/" ) {
+  if (num2 == 0) {
     resultat = "No es pot dividir entre zero"
   } else {
     resultat = num1 / num2;
