@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 let num1 = Number(prompt("Escriu un nombre: "));
 let sim = prompt("Quina operació vols fer? ");
 let num2 = Number(prompt("Escriu un altre nombre: "));

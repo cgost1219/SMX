@@ -1,4 +1,5 @@
-let tem = number(prompt("Quina temperatura fa en graus celsius? "));
+const prompt = require('prompt-sync')();
+let temp = Number(prompt("Quina temperatura fa en graus celsius? "));
 let missatge;
 if (temp < 10 ) {
 missatge = "Fa fred";

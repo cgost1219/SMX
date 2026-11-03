@@ -1,9 +1,8 @@
-let num = number(prompt("Escriu un nombre: "));
+const prompt = require('prompt-sync')();
+let num = Number(prompt("Escriu un nombre: "));
 let com = 7
-let missatge;
-if (num = com) {
-missatge = "Has endevinat el número!";
+if (num == com) {
+  console.log("Has endevinat el número!");
 } else {
-missatge = "No has encertat. Torna-ho a provar!";
+  console.log("No has encertat. Torna-ho a provar!");
 }
-console.log(missatge);

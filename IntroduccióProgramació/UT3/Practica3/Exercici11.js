@@ -1,6 +1,6 @@
-let var = "hola";
+let hola = "hola";
 let missatge;
-if (var = var ) {
+if ( `${hola = hola}` ) {
 missatge = "La condició és vertadera";
 } else {
 missatge = "La condició és falsa";

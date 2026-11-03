@@ -1,14 +1,15 @@
-let talla = number(prompt("Escriu un nombre: "));
-let missatge;
-if (talla = 1) {
-missatge = "Talla XS";
-} else if (talla = 2) {
-missatge = "Talla S";
-} else if (talla = 3) {
-missatge = "Talla M";
-} else if (talla = 4) {
-missatge = "Talla L";
+const prompt = require('prompt-sync')();
+let talla = Number(prompt("Escriu un nombre: "));
+
+if (talla == 1) {
+  console.log("Talla XS");
+} else if (talla == 2) {
+  console.log("Talla S");
+} else if (talla == 3) {
+  console.log("Talla M");
+} else if (talla == 4) {
+  console.log("Talla L");
 } else {
-missatge = "Talla no disponible";
+  console.log("Talla no disponible");
 }
-console.log(missatge);
+

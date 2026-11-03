@@ -1,8 +1,10 @@
-let anys = number(prompt("Quants anys tens? "));
+const prompt = require('prompt-sync')();
+let anys = Number(prompt("Quants anys tens? "));
 let entrada = prompt("tens entrada? ");
+let missatge
 
-if (carnet = si || no) {
-  if (edat <= 18 && entrada = "si") {
+if (entrada == "si" || entrada == "no") {
+  if (anys >= 18 && entrada == "si") {
     missatge = "Accés permès";
   } else {
     missatge = "Accés denegat";
