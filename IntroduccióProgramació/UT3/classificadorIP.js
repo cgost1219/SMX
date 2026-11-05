@@ -13,6 +13,24 @@ let verOct4 = (oct4 >= 0 && oct4 <= 255) ? true : false;
 
 if (verOct1 == true && verOct2 == true && verOct3 == true && verOct4 == true) {
   console.log(`Adreça: ${oct1}.${oct2}.${oct3}.{oct4}`);
+    console.log(`Adreça: oct1.{oct2}.oct3.{oct4}`);
+  if (oct1 === 0) {
+    classe = "Reservada";
+  } else if (oct1 <= 126) {
+    classe = "A";
+  } else if (oct1 === 127) {
+    classe = "Loopback";
+  } else if (oct1 <= 191) {
+    classe = "B";
+  } else if (oct1 <= 223) {
+    classe = "C";
+  }else if (oct1 <= 239) {
+    classe = "D";
+  } else if (oct1 <= 255) {
+    classe = "E";
+  }
+  console.log(`classe: ${classe}`);
+
 } else {
   console.log("Adreça no vàlida: cada octet ha d'estar entre 0 i 255.");
 }
