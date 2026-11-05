@@ -12,8 +12,7 @@ let verOct3 = (oct3 >= 0 && oct3 <= 255) ? true : false;
 let verOct4 = (oct4 >= 0 && oct4 <= 255) ? true : false;
 
 if (verOct1 == true && verOct2 == true && verOct3 == true && verOct4 == true) {
-  console.log(`Adreça: ${oct1}.${oct2}.${oct3}.{oct4}`);
-    console.log(`Adreça: oct1.{oct2}.oct3.{oct4}`);
+  console.log(`Adreça: ${oct1}.${oct2}.${oct3}.${oct4}`);
   if (oct1 === 0) {
     classe = "Reservada";
   } else if (oct1 <= 126) {
@@ -30,6 +29,25 @@ if (verOct1 == true && verOct2 == true && verOct3 == true && verOct4 == true) {
     classe = "E";
   }
   console.log(`classe: ${classe}`);
+    switch(classe) {
+    case 'A':
+       console.log("Mascara per defecte: 255.0.0.0");
+       let privadaA = oct1 === 10 ? "Privada" : "Pública";
+       console.log(`Tipus: ${privadaA}`);
+      break;
+    case 'B':
+       console.log("Mascara per defecte: 255.255.0.0");
+       let privadaB = oct1 === 172 && oct2 >= 16 && oct2 <= 31 ? "Privada" : "Pública";
+       console.log(`Tipus: ${privadaB}`);
+      break;
+    case 'C':
+       console.log("Mascara per defecte: 255.255.255.0");
+       let privadaC = oct1 === 192 && oct2 === 168 ? "Privada" : "Pública";
+       console.log(`Tipus: ${privadaC}`);
+      break;
+    default:
+      console.log("No té màscara per defecte (adreça especial)");
+    }
 
 } else {
   console.log("Adreça no vàlida: cada octet ha d'estar entre 0 i 255.");
