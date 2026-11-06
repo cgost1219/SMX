@@ -15,6 +15,8 @@ if (verOct1 == true && verOct2 == true && verOct3 == true && verOct4 == true) {
   console.log(`Adreça: ${oct1}.${oct2}.${oct3}.${oct4}`);
   if (oct1 === 0) {
     classe = "Reservada";
+  } else if (oct1 == 169 && oct2 == 254) {
+    classe = "adreça APIPA";
   } else if (oct1 <= 126) {
     classe = "A";
   } else if (oct1 === 127) {
