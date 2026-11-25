@@ -8,7 +8,7 @@ let paq = Number(prompt("Pèrdua de paquets (%) "));
 if (velCon <= 0 || velMes < 0 || ping < 0 || paq < 0 ) {
     console.log("Dades no vàlides")
 } else {
-    let perc = (velMes / velCon) * 100; 
+    let perc = (velMes / velCon) * 100; // el *100 ha de ser només de la velMes, pero funciona correctament així
     console.log(`${perc}%`)
     if ( perc >= 90 && ping < 30 && paq === 0 ) {
         console.log("Estat: Òptima");

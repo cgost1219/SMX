@@ -10,7 +10,7 @@ let resto;
 switch (tipus) {
     case "XARXA":
         departament = "xarxes";
-        h = 4
+        h = 4 //falta declarar la variable
         break;
     case "HARDWARE":
         departament = "taller";
@@ -24,9 +24,9 @@ switch (tipus) {
         console.log("Tipus d'incidència no vàlida");
 }
 
-let prioritat = (aturat === "si" && client === "si") ? "CRÍTICA" : "NORMAL";
+let prioritat = (aturat === "si" && client === "si") ? "CRÍTICA" : "NORMAL"; //falta declarar la variable
 let termini = (prioritat === "CRÍTICA") ? h = h/2 : h;
-let avis = (prioritat === "CRÍTICA") ? "Avisar al cap de departament" : "";
+let avis = (prioritat === "CRÍTICA") ? "Avisar al cap de departament" : ""; //falta declarar la variable
 
 if (hora > h) {
     resto = hora - h

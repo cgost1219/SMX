@@ -14,9 +14,9 @@ nomEquip = prompt("Nom de l'equip: ");
 memRAM = Number(prompt("Memòria ram (GB): "));
 capDisc = Number(prompt("Capacitat del disc (GB): "));
 anyCompra = Number(prompt("Any de compra: "));
-garantia = Boolean(prompt("Té garantia? (si/no): "));
+garantia = Boolean(prompt("Té garantia? (si/no): ")); //No ha de tenir el boolean i falta l'IF
 
-let antiguitat = (ANY - anyCompra);
+let antiguitat = (ANY - anyCompra); //No fan falta els parèntesi.
 let RamMb = memRAM * 1024;
 let discTb = capDisc / 1024;
 
@@ -33,4 +33,4 @@ console.log(typeof(memRAM));
 console.log(typeof(capDisc));
 console.log(typeof(anyCompra));
 console.log(typeof(garantia));
-console.log(typeof(ip));
+console.log(typeof(ip)); //quedarà undefinished perquè no s'ha assignat cap valor.
